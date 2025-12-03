@@ -24,6 +24,6 @@ public class UrlEntity {
     @Column(name = "user_id")
     private Integer userId;
 
-    @Column(name = "created_at")
+    @Column(name = "created_at", insertable = false, updatable = false)
     private LocalDateTime createdAt;
 }
